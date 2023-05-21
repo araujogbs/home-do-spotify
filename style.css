@@ -1,0 +1,292 @@
+@font-face {
+    font-family: ttcommons;
+    src: url(fonts/FontsFree-Net-TTCommons-Bold.ttf) format('truetype');
+}
+
+* {
+    font-family: ttcommons
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./imagens/danzo-vino.jpg);
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+    grid-template-rows: 80px 1000px 536px
+}
+
+
+
+
+.header {
+
+    grid-area: header;
+    width: 100%;
+    background-color: black;
+    opacity: 60%;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    position: fixed;
+
+
+
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    width: 60%;
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    position: relative;
+    left: 10px;
+
+}
+
+
+
+.logodospotify {
+    height: 40px;
+    padding: 20px;
+    position: relative;
+    right: 35px;
+    top: 2px;
+
+
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    position: relative;
+    left: 15px;
+    top: 3px;
+    letter-spacing: 0.1px;
+}
+
+.links:hover {
+    color: #1ED760;
+    transition: 0.3s;
+    transition: 0.3s;
+
+}
+
+
+.main {
+    grid-area: main;
+}
+
+
+.musicaparatodos {
+    text-align: center;
+    text-decoration: none;
+    font-size: 85px;
+    color: white;
+    position: relative;
+    top: 270px;
+    letter-spacing: -1px;
+
+}
+
+.frasespotify {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 210px;
+    font-size: 20px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: 105px;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+}
+
+.aproveiteospotifyfree {
+
+
+    padding: 11px 50px;
+    background-color: #1ED760;
+    border-radius: 30px;
+    letter-spacing: 1px;
+
+}
+
+.aproveiteospotifyfree:hover {
+    background-color: #00ff59;
+    transition: 0.8s;
+
+}
+
+.obterspotifypremium {
+
+    border: solid 2px;
+    padding: 11px 50px;
+    background-color: transparent;
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+
+.obterspotifypremium:hover {
+
+
+    border: solid 2px transparent;
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+
+}
+
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+
+}
+
+.logodospotifyfooter {
+
+    height: 40px;
+    position: relative;
+    left: 356px;
+    top: 80px;
+}
+
+.tabelafooter {
+    color: white;
+    position: relative;
+    left: 480px;
+    top: 40px;
+    gap: 30px;
+    line-height: 40px;
+    column-gap: 1000px;
+    border-collapse: separate;
+    border-spacing: 80px 0px;
+    letter-spacing: 1px;
+
+
+}
+
+
+
+.cabecalho {
+
+    color: gray;
+    text-transform: uppercase;
+    font-size: 15px;
+    position: relative;
+    right: 20px;
+
+
+}
+
+.th1 {
+
+    position: relative;
+    right: 20px;
+}
+
+.th2 {
+    position: relative;
+    left: 5px;
+}
+
+td:hover {
+    color: #1ED760;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+
+.infosrodape {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: relative;
+    top: 150px;
+    left: 335px;
+    width: 800px;
+
+}
+
+.linksrodape {
+    text-decoration: none;
+    color: gray;
+}
+
+.linksrodape:hover, .bandeiralink:hover {
+    color: #1ED760;
+    transition: 0.3s;
+
+}
+
+.redessociais {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 72%;
+    bottom: 252px;
+    gap: 18px;
+    width: 200px;
+    
+}
+
+.twitter,
+.insta,
+.facebook {
+    width: 25px;
+    padding: 13px;
+}
+
+.bandeira{
+    position: relative;
+    left: 80.5%;
+    width: 25px;
+    top: 30px;
+    }
+    .bandeiralink{
+        text-decoration: none;
+        position: relative;
+        text-decoration: none;
+        left: 80%;
+        color: gray;
+        font-size: 14px;
+        top: 25px;
+    }
+
+    .copyright {
+        color: gray;
+        position: relative;
+        left: 78.5%;
+        top: 25px;
+        font-size: 13px;
+    }
